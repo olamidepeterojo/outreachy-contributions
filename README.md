@@ -99,3 +99,68 @@ This dataset is a **binary classification task**, where the goal is to predict w
 This dataset is **viable for classification tasks** and computationally feasible for both traditional ML and deep learning. While class imbalance poses a challenge, it reflects real-world drug discovery constraints, making success here impactful for practical applications.  
 
 ---
+
+# Featurise the data
+
+With the vitual environment activated, run the commands below:
+
+```
+pip install ersilia
+pip install jupyter
+```
+
+---
+
+The `SARSCoV2_3CLPro_Diamond.csv` file located in the `data` folder, stores the raw dataset.
+
+---
+
+## How to run
+
+Firstly, i recommend you create a `pyproject.toml` file, copy and paste the code from the ersilia-os [Github](https://github.com/ersilia-os/ersilia) to ensure ersilia works with all dependencies installed.
+
+**NOTE:** A `pyproject.toml` file already exists in the repo for you.
+
+To install dependencies, run:
+
+```
+poetry install
+```
+
+Secondly, fetch the representation model with its id `eos4wt0` and serve. Run the command below:
+
+```
+esilia fetch eos4wt0
+ersilia serve eos4wt0
+```
+
+---
+
+From the root repository, lunch the jupyter notebook:
+
+```
+jupyter notebook
+```
+
+Then navigate to the notebooks/featurize.ipynb file to run the code.
+
+**NOTE:** While in jupyter notebook, ensure to install ersilia:
+
+```
+!pip install ersilia
+```
+
+
+---
+
+Automatically, a file `features.csv` will be created in your `notebooks` folder. This file contains the featurized dataset.
+
+## Dataset Analysis: SARS-CoV-2 3CLPro_Diamond (High-Throughput Screening)
+
+---
+
+### **1. I selected the Morgan fingerprints featurizer (`eos4wt0`) becuase it provides a  practical, interpretable, and reproducible solution for featurizing my dataset.**
+
+---
+
+### **2. The `featurize.ipynb` file located in the `notebooks` folder is a jupyter notebook which contains the featurization code.**
