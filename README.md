@@ -202,3 +202,23 @@ Automatically the result will be outputed in the terminal and a visual represent
 ### **3. After splitting the data, i obtained predictions on the testing set using `clf.predict(X_test)`. i then computed the accuracy with `accuracy_score` and generated a full report (which includes precision, recall, and F1-score) using classification_report.**
 
 ### **4. I used Matplotlib together with scikit‑learn’s display utilities to create visualizations.**
+
+---
+
+# Applying model to ChEMBL
+
+Just like we ran the code in `Build an ML model` see above, we will do same for this section.
+
+First you would want to make sure you are on the `chembl_val` branch.
+
+To do so run:
+
+```
+git branch
+```
+
+If not on the branch run:
+
+```
+git checkout chembl_val
+```
